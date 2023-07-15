@@ -1,7 +1,11 @@
 
 from django.http import HttpResponse
-#esto carga las plantillas
+
+#Esto carga las plantillas
 from django.template import loader
+
+#En este caso cargo y traigo los datos estaticos de la tabla
+
 
 # Request: Para realizar peticiones
 # HttpResponse: Para enviar la respuesta usando el protocolo HTTP
@@ -28,3 +32,9 @@ def plantillaBody(request):
     plantillaExterna = loader.get_template("body.html")
     documento = plantillaExterna.render()
     return HttpResponse(documento)
+
+def tabla(request):
+    plantillaExterna = loader.get_template("tabla.html")
+    documento = plantillaExterna.render()
+    return HttpResponse(documento)
+

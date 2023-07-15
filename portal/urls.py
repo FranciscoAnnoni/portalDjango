@@ -1,10 +1,16 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-# mis vistas
-from portal.views import plantillaBody
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("home/", plantillaBody)
+    path('app/', include('app.urls'))
 ]
+
+"""
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("home/", plantillaBody),
+    path("tabla/", tabla)
+]
+"""

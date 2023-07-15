@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'portal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/franc/Desktop/DjangoPortal/portal/portal/plantillas/"],
+        'DIRS': ["C:/Users/franc/Desktop/DjangoPortal/portal/app/plantillas/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "portal/static",
+    BASE_DIR / "app/static",
 
 ]
 
