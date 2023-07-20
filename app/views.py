@@ -24,3 +24,9 @@ def list_programmers(request):
     programmers = list(Programmer.objects. values())
     data = {'programmers':programmers}
     return JsonResponse(data)
+
+
+def inicio(request):
+    plantillaExterna = loader.get_template("inicio.html")
+    documento = plantillaExterna.render()
+    return HttpResponse(documento)

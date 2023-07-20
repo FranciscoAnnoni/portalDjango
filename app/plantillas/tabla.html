@@ -15,6 +15,7 @@
             <link rel="stylesheet" href="{% static 'css/tabla.css' %}" />
     </head>
     <body>
+        <div class="container-table">
                 <div class="container mt-4">
                     <div class="row">
                          <!-- Esto es para que sea reponsivo en funcion de las distintas pantallas -->
@@ -22,7 +23,6 @@
                             <div class="table-responsive">
                                 <table id="datatable-programmers" class="table">
                                     <caption>
-                                        tabla
                                     </caption>
                                     <thead>
                                         <tr>
@@ -48,5 +48,6 @@
                 <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
                 <!-- Custom JS -->
                 <script src="{% static 'javaScript\tabla.js' %}"></script>
+        </div>
     </body>
 </html>

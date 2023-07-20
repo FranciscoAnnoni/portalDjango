@@ -1,4 +1,9 @@
+
 .centered {
     text-align: center !important;
     vertical-align: middle !important;
+}
+
+.row {
+    width: 90%;
 }
